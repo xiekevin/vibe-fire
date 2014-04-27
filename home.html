@@ -1,0 +1,243 @@
+<head>
+  <script src='assets/jquery-1.11.0.min.js'></script>
+  <script src="assets/script.js"></script>
+  <style>
+    a:link {color: rgba(199, 188, 244, 0.99);}    /* unvisited link */
+    a:visited {color: rgba(199, 188, 244, 0.99);}  /* visited link */
+    a:hover {color: rgba(255, 255, 255, 0.25);}   /* mouse over link */
+  </style>
+</head>
+  <link rel="stylesheet" type="text/css"  href="assets/style.css" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600' rel='stylesheet' type='text/css'>
+<body>
+  <div id='container'>
+      <div id="hero"><div id='hero-blue'>Vibe</div><div id='hero-red'>Fire</div>
+      <div id='hero-text'>Premier music service</div>
+    </div>
+      <div id='hero-hover'>Home</div>
+    <div id='about-hover'>About</div>
+    <div id="background"></div>
+    <div id='home-page' class='page selected-page'>
+        <div id='title-content'>
+          <div id='title-content-title'>Let's get started</div>
+          <div id='title-content-info'>
+            Choose a song, genre, or artist to begin.
+          </div>
+          <div id='title-buttons'>
+            <div id="song-button" class='button'>Song</div>
+            <div id='genre-button' class='button'>Genre</div>
+            <div id='artist-button' class='button'>Artist</div>
+          </div>
+
+          <div id='form'>
+            <form>
+              <input id='text-box' type='text' name='textfield' value='Sunday Morning by Maroon 5'>
+              <input type='image' type='submit' src='assets/Magnifying_glass_icon.svg' id='submit-button' height='22px'>
+            </form>
+          </div>
+        </div>
+    </div>
+      
+      <div id='result-page' class='page'>    
+        <div id='song-header-bar'>
+          <div id='song-header-text'>Seed Song Selected: <div id='song-title-header-text'>  Sunday Morning by Maroon 5 </div></div>
+        </div>
+        
+        <div id='song-side-bar'>
+          <div id='first-wrapper' class='song-wrapper selected'>
+            <div class='song-container'>
+              <div class='song-title'>If I Never See Your Face Again</div>
+              <div class='song-artist'>Maroon 5</div>
+            </div>
+          </div>
+          <div class='song-wrapper'>
+            <div class='song-container'>
+              <div class='song-title'>The Woman I Love</div>
+              <div class='song-artist'>Jason Mraz</div>
+            </div>
+          </div>
+          <div class='song-wrapper'>
+            <div class='song-container'>
+              <div class='song-title'>Talking To The Moon</div>
+              <div class='song-artist'>Bruno Mars</div>
+            </div>
+          </div>
+          <div class='song-wrapper'>
+            <div class='song-container'>
+              <div class='song-title'>For The First Time</div>
+              <div class='song-artist'>The Script</div>
+            </div>
+          </div>
+          <div class='song-wrapper'>
+            <div class='song-container'>
+              <div class='song-title'>Daughters</div>
+              <div class='song-artist'>John Mayer</div>
+            </div>
+          </div>
+          <div class='song-wrapper'>
+            <div class='song-container'>
+              <div class='song-title'>This Ain't Goodbye</div>
+              <div class='song-artist'>Train</div>
+            </div>
+          </div>
+          <div class='song-wrapper'>
+            <div class='song-container'>
+              <div class='song-title'>Lucky</div>
+              <div class='song-artist'>Jason Mraz, Colbie Caillat</div>
+            </div>
+          </div>        
+        </div>
+        
+        <div id='song-main'>
+          <div id='album-art-container'>
+            <img src="assets/maroon_album.jpg" id='album-art'>
+            <img src="assets/play.jpg" id='play-button'>
+            <div id='album-name'>
+              <div id='album-title'>
+              It Won't Be Soon Before Long &shy;</div>
+              <div id='album-year'>
+                (2007)
+              </div>
+              <div class='artist-label'> 
+                <div class='artist-static'>Artist: </div>
+                <div class='artist'>Maroon 5</div>
+              </div>
+              <div class='artist-label'>
+                <div class='artist-static'>Genre: </div>
+                <div class='artist'>Electro-funk, blue-eyed soul</div>
+              </div>
+              <div class='artist-label'>
+                <div class='artist-static'>Length: </div>
+                <div class='artist'>40:32</div>
+              </div>
+              <div class='artist-label'>
+                <div class='artist-static'>Label: </div>
+                <div class='artist'>A&amp;M/Octone</div>
+              </div>
+              <div class='artist-label'>
+                <div class='artist-static'>Producers: </div>
+                <div class='artist'>Mike Elizondo, Mark "Spike" Stent</div>
+              </div>
+              
+              <div id='curr-playing-title'>Currently Playing: </div>
+              <div id='spaces'>&shy; &shy;</div>
+              <div id='curr-playing'>If I Never See Your Face Again</div>
+              
+            </div>
+          </div>
+          
+          <div id='album-songs-container'>
+            <div class='album-song-wrapper selected'>
+              <div class='centerer'>
+                <div class='like-button'>&hearts;</div>
+                <div class='track-number'>1</div>
+                <div class='album-song-name'>If I Never See Your Face Again</div>
+                <div class='album-song-length'>3:50</div>
+                <div class='popularity'>&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+              </div>
+            </div>
+            <div class='album-song-wrapper'>
+              <div class='centerer'>
+                <div class='like-button'>&hearts;</div>
+                <div class='track-number'>2</div>
+                <div class='album-song-name'>Makes Me Wonder</div>
+                <div class='album-song-length'>3:34</div>
+                <div class='popularity'>&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+              </div>
+            </div>
+            <div class='album-song-wrapper'>
+              <div class='centerer'>
+                <div class='like-button'>&hearts;</div>
+                <div class='track-number'>3</div>
+                <div class='album-song-name'>Little of Your Time</div>
+                <div class='album-song-length'>2:20</div>
+                <div class='popularity'>&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+              </div>
+            </div>
+            <div class='album-song-wrapper'>
+              <div class='centerer'>
+                <div class='like-button'>&hearts;</div>
+                <div class='track-number'>4</div>
+                <div class='album-song-name'>Wake Up Call</div>
+                <div class='album-song-length'>3:27</div>
+                <div class='popularity'>&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+              </div>
+            </div>
+            <div class='album-song-wrapper'>
+              <div class='centerer'>
+                <div class='like-button'>&hearts;</div>
+                <div class='track-number'>5</div>
+                <div class='album-song-name'>Won't Go Home Without You</div>
+                <div class='album-song-length'>3:49</div>
+                <div class='popularity'>&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+              </div>
+            </div>
+            <div class='album-song-wrapper'>
+              <div class='centerer'>
+                <div class='like-button'>&hearts;</div>
+                <div class='track-number'>6</div>
+                <div class='album-song-name'>Nothing Lasts Forever</div>
+                <div class='album-song-length'>3:08</div>
+                <div class='popularity'>&#9733;&#9733;&#9734;&#9734;&#9734;</div>
+              </div>
+            </div>
+            <div class='album-song-wrapper'>
+              <div class='centerer'>
+                <div class='like-button'>&hearts;</div>
+                <div class='track-number'>7</div>
+                <div class='album-song-name'>Can't Stop</div>
+                <div class='album-song-length'>2:35</div>
+                <div class='popularity'>&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+              </div>
+            </div>
+            <div class='album-song-wrapper'>
+              <div class='centerer'>
+                <div class='like-button'>&hearts;</div>
+                <div class='track-number'>8</div>
+                <div class='album-song-name'>Goodnight Goodnight</div>
+                <div class='album-song-length'>4:08</div>
+                <div class='popularity'>&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id='about-page' class='page'>
+        <div id='about-header-bar'>
+          <div id='song-header-text'>About VibeFire <div id='song-title-header-text'> &amp; Contact Information </div></div>
+        </div>
+        
+        <div id='description-centerer'>
+          <div id='description-container'>
+            <div id='about-container'>
+              <div id='about-header'>about</div>
+              <div id='about-description'> VibeFire is a project created for the purpose of exploring basic website design using CSS, HTML, and jQuery as a final submission for the <a href='http://www.thewebdesignworkshop.co'>web design decal</a>. The idea  behind VibeFire is for it to emulate a music recommendation site (like Pandora or Spotify) by allowing users to type in a song, genre, or artist and recieve music recommendations based on what is entered. <br/> <br/> As the first website I've designed, there are many design inconsistencies and styling glitches, but nevertheless it's been a great first step into furthering my passion and expertise in design. While creating the website, significant difficulty was encountered in trying to getting elements to adjust with screen resolution, positioning elements using margin or padding, centering elements horizontally and/or vertically, and getting the proper alignment. </div>
+            </div>
+            <div id='contact-container'>
+              <div id='contact-header'>contact</div>
+              <div id='contact-description'>
+                This website was created by Kevin Xie, a student studying computer science and business administration at the University of California, Berkeley. He's expected to graduate in May of 2015 and will be looking for a position as a software developer at a technology company in the Bay Area. If you wish to reach Kevin, various contact information is listed  below.
+                
+                <div id='link-container'>
+                  <div class='link-header'>Facebook: &shy; &shy;
+                    <a href='https://www.facebook.com/kevinx3'> https://www.facebook.com/kevinx3</a>
+                      <br/>
+                  </div>
+                  <div class='link-header'>LinkedIn: &shy; &shy; 
+                  <a href='http://www.linkedin.com/pub/kevin-xie/45/2a5/88a'> www.linkedin.com/pub/kevin-xie/45/2a5/88a</a>
+                  </div><br/>
+                  <div class='link-header'>Email: &shy; &shy; 
+                  <a href=''>xie.kevin11@gmail.com</a>
+                  </div><br/>
+                  <div class='link-header'>Github:&shy; &shy; 
+                  <a href='https://github.com/xiekevin/'> https://github.com/xiekevin/</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
